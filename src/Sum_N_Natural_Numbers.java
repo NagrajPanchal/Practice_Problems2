@@ -13,9 +13,12 @@ public class Sum_N_Natural_Numbers
         for (int i=1; i<=n; i++)
         {
             sum = n*(n+1)/2; //Logic
-            System.out.print(i + "+"); //Series of Natural Numbers
-
+            if ( i <= n-1)
+            {
+                System.out.print(i + "+"); //Series of Natural Numbers
+            }
         }
+        System.out.print(n);
         System.out.println(" Sum = "+sum); //Sum of Natural Numbers
     }
 }

@@ -14,10 +14,14 @@ public class Sum_N_Natural_Num_While
     while ( count <= n)
     {
         sum = n*(n+1)/2; //Logic
-        System.out.print(count + "+"); //Series of Natural Numbers
+
+        if (count <= n-1)
+        {
+            System.out.print(count + "+"); //Series of Natural Numbers
+        }
         count++;
     }
+        System.out.print(n);
     System.out.print(" Sum = " +sum);
-
     }
 }
